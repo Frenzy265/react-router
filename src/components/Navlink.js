@@ -1,6 +1,6 @@
 import styled from 'styled-components/macro';
 
-const Button = styled.button`
+const Navlink = styled.link`
   background: purple;
   fill: white;
   border-radius: 50%;
@@ -16,4 +16,4 @@ const Button = styled.button`
   align-items: center;
 `;
 
-export default Button;
+export default Navlink;
