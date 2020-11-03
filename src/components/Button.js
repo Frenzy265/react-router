@@ -10,6 +10,8 @@ const Button = styled.button`
   height: 50px;
   cursor: pointer;
   box-shadow: 5px 10px 20px pink;
+  line-height: 1;
+  margin: 10px;
 `;
 
 export default Button;
