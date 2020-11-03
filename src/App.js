@@ -1,21 +1,20 @@
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import GlobalStyle from './GlobalStyle';
+import Button from './components/Button';
+import WishlistItem from './components/WishlistItem';
 
 function App() {
   return (
-    <Router>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
-      </ul>
-      <Switch>
-        <Route path="/contact">Contact</Route>
-        <Route path="/">Home</Route>
-      </Switch>
-    </Router>
+    <>
+      <GlobalStyle />
+      <WishlistItem title="Franzi" />
+      <Button>+</Button>
+      <Router>
+        <Switch>
+          <Route path="/" />
+        </Switch>
+      </Router>
+    </>
   );
 }
 
