@@ -6,10 +6,11 @@ import WishlistItem from './components/WishlistItem';
 function App() {
   return (
     <>
-      <GlobalStyle />
-      <WishlistItem title="Franzi" />
-      <Button>+</Button>
       <Router>
+        <GlobalStyle />
+        <WishlistItem title="Franzi" />
+        <Button>+</Button>
+
         <Switch>
           <Route path="/" />
         </Switch>
