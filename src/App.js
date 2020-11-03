@@ -1,21 +1,27 @@
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import GlobalStyle from './GlobalStyle';
+import Home from './pages/Home';
+import Add from './pages/Add';
+import Details from './pages/Details';
 
 function App() {
   return (
-    <Router>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
-      </ul>
-      <Switch>
-        <Route path="/contact">Contact</Route>
-        <Route path="/">Home</Route>
-      </Switch>
-    </Router>
+    <>
+      <Router>
+        <GlobalStyle />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/add">
+            <Add />
+          </Route>
+          <Route exact path="/details">
+            <Details />
+          </Route>
+        </Switch>
+      </Router>
+    </>
   );
 }
 
