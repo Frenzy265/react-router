@@ -14,6 +14,10 @@ const Button = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
 `;
 
 export default Button;

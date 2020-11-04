@@ -1,11 +1,20 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { Link, useParams } from 'react-router-dom';
 import Navlink from '../components/Button';
+import { getListById } from '../Api/lists';
 
 export default function Details() {
+  const { listId } = useParams();
+  const [list, setList] = useState();
+
+  useEffect(async () => {
+    const newList = await getListById(listId);
+    setList(newList);
+  }, []);
+
   return (
     <>
-      <div>Hier sollen alle Details stehen</div>
+      <div>Find {list?.title} here.</div>
       <Link to="/">
         <Navlink>
           <svg
