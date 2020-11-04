@@ -14,7 +14,7 @@ export default function Home() {
 
   return (
     <>
-      <h1>Wishlists</h1>
+      <h1>Wishlist Overview</h1>
       <div>
         {lists?.map((list) => (
           <Link key={list.id} to={`/${list.id}`}>

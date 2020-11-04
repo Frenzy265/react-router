@@ -15,7 +15,7 @@ export default function Details() {
 
   return (
     <>
-      <h1>Look at {list?.title} for details</h1>
+      <h1> {list?.title} in detail</h1>
       <ul>
         {list?.items.map((item) => (
           <DetailsItem key={item}> {item} </DetailsItem>

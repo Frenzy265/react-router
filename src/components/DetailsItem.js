@@ -6,7 +6,6 @@ const DetailsItem = styled.li`
   padding: 20px;
   color: white;
   background: pink;
-  text-decoration: none;
   margin: 10px;
 `;
 export default DetailsItem;
