@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import Navlink from '../components/Button';
 import { getListById } from '../Api/lists';
+import DetailsItem from '../components/DetailsItem';
 
 export default function Details() {
   const { listId } = useParams();
@@ -14,10 +15,10 @@ export default function Details() {
 
   return (
     <>
-      <h1>Find {list?.title} here.</h1>
+      <h1>Look at {list?.title} for details</h1>
       <ul>
         {list?.items.map((item) => (
-          <li key={item}> {item} </li>
+          <DetailsItem key={item}> {item} </DetailsItem>
         ))}
       </ul>
       <Link to="/">
