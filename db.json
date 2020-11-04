@@ -2,15 +2,23 @@
   "lists": [
     {
       "id": 1,
-      "title": "Mamas Wishlist"
+      "title": "Mamas Wishes",
+      "items": ["Snowman", "Bird house", "Socks"]
     },
     {
       "id": 2,
-      "title": "Papas Wistlist"
+      "title": "Papas Wishes",
+      "items": ["Watch", "Book"]
     },
     {
       "id": 3,
-      "title": "Omas Wishlist"
+      "title": "Omas Wishes",
+      "items": ["Family Picture", "Socks"]
+    },
+    {
+      "id": 3,
+      "title": "Kittys Wishes",
+      "items": ["Toys"]
     }
   ]
 }

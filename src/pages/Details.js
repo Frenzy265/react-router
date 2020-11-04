@@ -14,7 +14,12 @@ export default function Details() {
 
   return (
     <>
-      <div>Find {list?.title} here.</div>
+      <h1>Find {list?.title} here.</h1>
+      <ul>
+        {list?.items.map((item) => (
+          <li key={item}> {item} </li>
+        ))}
+      </ul>
       <Link to="/">
         <Navlink>
           <svg
