@@ -16,7 +16,7 @@ function App() {
           <Route exact path="/add">
             <Add />
           </Route>
-          <Route exact path="/details">
+          <Route exact path="/:listId">
             <Details />
           </Route>
         </Switch>

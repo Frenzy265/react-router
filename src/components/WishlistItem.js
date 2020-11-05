@@ -6,6 +6,8 @@ const Container = styled.div`
   border-radius: 15px;
   padding: 20px;
   color: darkblue;
+  text-decoration: none;
+  margin: 10px;
 `;
 
 function WishlistItem({ title }) {
