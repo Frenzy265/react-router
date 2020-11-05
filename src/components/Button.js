@@ -15,9 +15,9 @@ const Button = styled.button`
   justify-content: center;
   align-items: center;
 
-  position: fixed;
+  /* position: fixed;
   bottom: 10px;
-  right: 10px;
+  right: 10px; */
 `;
 
 Button.defaultProps = {

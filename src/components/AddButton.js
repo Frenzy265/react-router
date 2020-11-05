@@ -2,8 +2,8 @@ import styled from 'styled-components/macro';
 
 const AddButton = styled.input`
   background: purple;
-  fill: white;
   border-radius: 50%;
+  color: white;
   width: 50px;
   height: 50px;
   border: none;

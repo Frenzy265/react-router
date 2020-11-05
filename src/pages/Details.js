@@ -4,6 +4,7 @@ import Navlink from '../components/Navlink';
 import { getListById, deleteListById } from '../Api/lists';
 import DetailsItem from '../components/DetailsItem';
 import DangerButton from '../components/DangerButton';
+import Button from '../components/Button';
 
 export default function Details() {
   const { listId } = useParams();
@@ -20,6 +21,10 @@ export default function Details() {
     history.push('/');
   };
 
+  function addWish() {
+    alert('Add a new wish!');
+  }
+
   return (
     <>
       <h1> {list?.title} in detail</h1>
@@ -28,6 +33,18 @@ export default function Details() {
           <DetailsItem key={item}> {item} </DetailsItem>
         ))}
       </ul>
+      <Button onClick={addWish}>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="24"
+          viewBox="0 0 24 24"
+          width="24"
+        >
+          <path d="M0 0h24v24H0z" fill="none" />
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+        </svg>
+      </Button>
+
       <DangerButton onClick={handleDelete}>
         <svg
           xmlns="http://www.w3.org/2000/svg"

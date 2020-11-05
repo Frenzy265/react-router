@@ -8,11 +8,14 @@ import AddButton from '../components/AddButton';
 export default function Add() {
   const [title, setTitle] = useState('');
   const history = useHistory();
+  const [wish, setWish] = useState('');
 
-  function handleChange(event) {
+  function handleChangeTitle(event) {
     setTitle(event.target.value);
   }
-
+  function handleChangeWish(event) {
+    setWish(event.target.value);
+  }
   const handleSubmit = async (event) => {
     event.preventDefault();
     const newList = await postListById({
@@ -26,16 +29,28 @@ export default function Add() {
     <>
       <h1>Add new wishlist</h1>
       <form onSubmit={handleSubmit}>
-        <label>
-          Name:
-          <Inputfield
-            type="text"
-            placeholder="Enter the name"
-            value={title}
-            onChange={handleChange}
-            required
-          />
-        </label>
+        <div>
+          <label>
+            Name:
+            <Inputfield
+              type="text"
+              placeholder="Enter the name"
+              value={title}
+              onChange={handleChangeTitle}
+              required
+            />
+          </label>
+          <label>
+            Wish:
+            <Inputfield
+              type="text"
+              placeholder="Enter the wish"
+              value={wish}
+              onChange={handleChangeWish}
+              required
+            />
+          </label>
+        </div>
         <AddButton type="submit" value="Add" />
       </form>
       <Navlink to="/">
