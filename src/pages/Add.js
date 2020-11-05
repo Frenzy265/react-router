@@ -1,12 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Navlink from '../components/Button';
+import Inputfield from '../components/Inputfield';
 
 export default function Add() {
   return (
     <>
+      <h1>Add new wishes</h1>
       <form>
-        <input type="text" placeholder="Enter the name" />
+        <Inputfield type="text" placeholder="Enter the name" />
       </form>
       <Link to="/">
         <Navlink>

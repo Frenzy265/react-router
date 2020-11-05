@@ -1,13 +1,12 @@
 import styled from 'styled-components/macro';
 
-const DetailsItem = styled.li`
+const Inputfield = styled.input`
   box-shadow: 5px 10px 20px pink;
   border-radius: 15px;
   padding: 20px;
-  color: white;
-  background: pink;
+  color: black;
   margin: 10px;
-  list-style: none;
+  border: none;
 `;
 
-export default DetailsItem;
+export default Inputfield;

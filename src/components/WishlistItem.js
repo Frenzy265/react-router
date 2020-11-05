@@ -5,8 +5,7 @@ const Container = styled.div`
   box-shadow: 5px 10px 20px pink;
   border-radius: 15px;
   padding: 20px;
-  color: darkblue;
-  text-decoration: none;
+  color: black;
   margin: 10px;
 `;
 
