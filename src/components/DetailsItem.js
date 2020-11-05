@@ -7,5 +7,6 @@ const DetailsItem = styled.li`
   color: white;
   background: pink;
   margin: 10px;
+  list-style: none;
 `;
 export default DetailsItem;

@@ -15,6 +15,11 @@ body {
     -moz-osx-font-smoothing: grayscale;
   }
 
+  /* body {
+  background: linear-gradient(135deg, #8f0000 0%, #4d0f0f 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;} */
+
 ul {  display: block;
   list-style-type: disc;
   margin-block-start: 1em;
@@ -22,10 +27,15 @@ ul {  display: block;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   padding-inline-start: 0px;}
+  list-style: none;
 
   code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
+  }
+
+  a {
+    text-decoration: none;
   }
 `;
 

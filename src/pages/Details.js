@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import Navlink from '../components/Button';
 import { getListById } from '../Api/lists';
 import DetailsItem from '../components/DetailsItem';
+import DangerButton from '../components/DangerButton';
 
 export default function Details() {
   const { listId } = useParams();
@@ -21,6 +22,7 @@ export default function Details() {
           <DetailsItem key={item}> {item} </DetailsItem>
         ))}
       </ul>
+      <DangerButton>Delete</DangerButton>
       <Link to="/">
         <Navlink>
           <svg
