@@ -14,6 +14,10 @@ export default function Details() {
     setList(newList);
   }, []);
 
+  function handleDelete() {
+    alert('Danger: Delete!');
+  }
+
   return (
     <>
       <h1> {list?.title} in detail</h1>
@@ -22,7 +26,7 @@ export default function Details() {
           <DetailsItem key={item}> {item} </DetailsItem>
         ))}
       </ul>
-      <DangerButton>Delete</DangerButton>
+      <DangerButton onClick={handleDelete}>Delete</DangerButton>
       <Link to="/">
         <Navlink>
           <svg
