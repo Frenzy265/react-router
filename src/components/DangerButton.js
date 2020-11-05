@@ -15,4 +15,9 @@ const DangerButton = styled.button`
   justify-content: center;
   align-items: center;
 `;
+
+DangerButton.defaultProps = {
+  type: 'button',
+};
+
 export default DangerButton;

@@ -37,6 +37,12 @@ ul {  display: block;
   a {
     text-decoration: none;
   }
+
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 30px;
+  }
 `;
 
 export default GlobalStyle;

@@ -8,12 +8,12 @@
     {
       "id": 2,
       "title": "Papas Wishes",
-      "items": ["Watch", "Book"]
+      "items": ["Book", "Chocolate"]
     },
     {
       "id": 3,
-      "title": "Omas Wishes",
-      "items": ["Family Picture", "Socks"]
+      "title": "Kittys Wishes",
+      "items": ["Toys"]
     }
   ]
 }

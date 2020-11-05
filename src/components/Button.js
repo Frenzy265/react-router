@@ -20,4 +20,8 @@ const Button = styled.button`
   right: 10px;
 `;
 
+Button.defaultProps = {
+  type: 'button',
+};
+
 export default Button;
