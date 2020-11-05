@@ -13,3 +13,11 @@ export async function getListById(id) {
 export async function deleteListById(id) {
   await fetch(`http://localhost:5000/lists/${id}`, { method: 'DELETE' });
 }
+
+export async function postListById(list) {
+  await fetch('http://localhost:5000/lists', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(list),
+  });
+}
