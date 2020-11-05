@@ -1,22 +1,24 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useHistory, useParams } from 'react-router-dom';
 import Navlink from '../components/Button';
-import { getListById } from '../Api/lists';
+import { getListById, deleteListById } from '../Api/lists';
 import DetailsItem from '../components/DetailsItem';
 import DangerButton from '../components/DangerButton';
 
 export default function Details() {
   const { listId } = useParams();
   const [list, setList] = useState();
+  const history = useHistory;
 
   useEffect(async () => {
     const newList = await getListById(listId);
     setList(newList);
   }, []);
 
-  function handleDelete() {
-    alert('Danger: Delete!');
-  }
+  const handleDelete = async () => {
+    await deleteListById(listId);
+    history.push('/');
+  };
 
   return (
     <>
